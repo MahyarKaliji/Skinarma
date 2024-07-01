@@ -1,0 +1,53 @@
+.search-box-hidden {
+  display: none;
+}
+.search-box-block {
+  display: block;
+}
+
+
+/* start of product image hover */
+.imageBox {
+  position: relative;
+  float: left;
+}
+
+.imageBox .hoverImg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: none;
+}
+
+.imageBox:hover .hoverImg {
+  display: block;
+}
+
+/* .imageBox:hover .hoverImg {
+  display: block;
+} */
+/* start of product image hover */
+
+
+
+
+.catBox {
+  position: relative;
+  float: left;
+}
+
+.catBox .hoverBtn {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  bottom: 2vw;
+  display: none;
+}
+
+.catBox:hover .hoverBtn {
+  display: block;
+}
+
+.catBox:hover .hoverBtn {
+  display: block;
+}
