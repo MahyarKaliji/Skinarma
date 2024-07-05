@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>SKINARMA-Tailwind</title>
+    <title>SKINARMA-Regis</title>
     <link
       rel="stylesheet"
       href="https://flowbite.com/docs/flowbite.css?v=2.4.1a"
@@ -16,11 +16,10 @@
     />
   </head>
   <body class="font-body">
-    <!-- Start of Navbar & Header Section -->
-    <header class="bg-header-bg bg-cover bg-no-repeat w-full pt-7">
+    <header>
       <!-- navbar section -->
       <nav
-        class="grid grid-cols-[1fr,3fr,1fr] items-center justify-between text-white p-4"
+        class="grid grid-cols-[1fr,3fr,1fr] items-center justify-between text-black p-4 sticky top-0 bg-white border-b-2 border-gray-200"
       >
         <!-- Logo section -->
         <div class="logo sm:order-2 sm:text-center md:order-1">
@@ -44,7 +43,9 @@
           <div>
             <ul class="hidden md:flex justify-center text-[1.5vw]">
               <li>
-                <a href="index.html" class="mx-3 capitalize hover:border-b-2"
+                <a
+                  href="index.html"
+                  class="mx-3 capitalize hover:border-b-2 border-black"
                   >home</a
                 >
               </li>
@@ -55,7 +56,7 @@
                   id="multiLevelDropdownButton"
                   data-dropdown-toggle="multi-dropdown"
                   data-dropdown-trigger="hover"
-                  class="text-white mx-3 capitalize inline-flex items-center hover:border-b-2"
+                  class="text-black mx-3 capitalize inline-flex items-center hover:border-b-2 border-black"
                   type="button"
                 >
                   products
@@ -79,10 +80,10 @@
                 <!-- Dropdown menu -->
                 <div
                   id="multi-dropdown"
-                  class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44"
+                  class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700"
                 >
                   <ul
-                    class="py-2 text-sm text-gray-700"
+                    class="py-2 text-sm text-gray-700 dark:text-gray-200"
                     aria-labelledby="multiLevelDropdownButton"
                   >
                     <!-- Product Menu Item 01 Phone Case dd -->
@@ -93,7 +94,7 @@
                         data-dropdown-trigger="hover"
                         data-dropdown-placement="right-start"
                         type="button"
-                        class="flex items-center justify-between w-full px-4 py-2 hover:bg-gray-100"
+                        class="flex items-center justify-between w-full px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
                       >
                         Phone Case<svg
                           class="w-2.5 h-2.5 ms-3 rtl:rotate-180"
@@ -113,16 +114,16 @@
                       </button>
                       <div
                         id="doubleDropdown1"
-                        class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44"
+                        class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700"
                       >
                         <ul
-                          class="py-2 text-sm text-gray-700"
+                          class="py-2 text-sm text-gray-700 dark:text-gray-200"
                           aria-labelledby="doubleDropdownButton1"
                         >
                           <li>
                             <a
                               href="#"
-                              class="block px-4 py-2 hover:bg-gray-100"
+                              class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
                               >Iphone 15 Series</a
                             >
                           </li>
@@ -130,7 +131,7 @@
                           <li>
                             <a
                               href="#"
-                              class="block px-4 py-2 hover:bg-gray-100"
+                              class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
                               >Iphone 14 Series</a
                             >
                           </li>
@@ -138,7 +139,7 @@
                           <li>
                             <a
                               href="#"
-                              class="block px-4 py-2 hover:bg-gray-100"
+                              class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
                               >Iphone 13 Series</a
                             >
                           </li>
@@ -146,7 +147,7 @@
                           <li>
                             <a
                               href="#"
-                              class="block px-4 py-2 hover:bg-gray-100"
+                              class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
                               >Iphone 12 Series</a
                             >
                           </li>
@@ -154,7 +155,7 @@
                           <li>
                             <a
                               href="#"
-                              class="block px-4 py-2 hover:bg-gray-100"
+                              class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
                               >Iphone 11 Series</a
                             >
                           </li>
@@ -162,7 +163,7 @@
                           <li>
                             <a
                               href="#"
-                              class="block px-4 py-2 hover:bg-gray-100"
+                              class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
                               >Iphone X Series</a
                             >
                           </li>
@@ -170,7 +171,7 @@
                           <li>
                             <a
                               href="#"
-                              class="block px-4 py-2 hover:bg-gray-100"
+                              class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
                               >Iphone 6+ / 7+ / 8+</a
                             >
                           </li>
@@ -178,7 +179,7 @@
                           <li>
                             <a
                               href="#"
-                              class="block px-4 py-2 hover:bg-gray-100"
+                              class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
                               >Samsung S24 Series</a
                             >
                           </li>
@@ -186,7 +187,7 @@
                           <li>
                             <a
                               href="#"
-                              class="block px-4 py-2 hover:bg-gray-100"
+                              class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
                               >Samsung Galaxy S21 Series</a
                             >
                           </li>
@@ -194,7 +195,7 @@
                           <li>
                             <a
                               href="#"
-                              class="block px-4 py-2 hover:bg-gray-100"
+                              class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
                               >Samsung Galaxy Note 20 Series</a
                             >
                           </li>
@@ -202,7 +203,7 @@
                           <li>
                             <a
                               href="#"
-                              class="block px-4 py-2 hover:bg-gray-100"
+                              class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
                               >Samsung Galaxy Note 10 Series</a
                             >
                           </li>
@@ -218,7 +219,7 @@
                         data-dropdown-trigger="hover"
                         data-dropdown-placement="right-start"
                         type="button"
-                        class="flex items-center justify-between w-full px-4 py-2 hover:bg-gray-100"
+                        class="flex items-center justify-between w-full px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
                       >
                         Accessories<svg
                           class="w-2.5 h-2.5 ms-3 rtl:rotate-180"
@@ -238,10 +239,10 @@
                       </button>
                       <div
                         id="doubleDropdown2"
-                        class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44"
+                        class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700"
                       >
                         <ul
-                          class="py-2 text-sm text-gray-700"
+                          class="py-2 text-sm text-gray-700 dark:text-gray-200"
                           aria-labelledby="doubleDropdownButton"
                         >
                           <li>
@@ -251,7 +252,7 @@
                               data-dropdown-trigger="hover"
                               data-dropdown-placement="right-start"
                               type="button"
-                              class="flex items-center justify-between w-full px-4 py-2 hover:bg-gray-100"
+                              class="flex items-center justify-between w-full px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white text-left"
                             >
                               Apple Watch Accessories<svg
                                 class="w-2.5 h-2.5 ms-3 rtl:rotate-180"
@@ -271,23 +272,23 @@
                             </button>
                             <div
                               id="doubleDropdown21"
-                              class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44"
+                              class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700"
                             >
                               <ul
-                                class="py-2 text-sm text-gray-700"
+                                class="py-2 text-sm text-gray-700 dark:text-gray-200"
                                 aria-labelledby="doubleDropdownButton"
                               >
                                 <li>
                                   <a
                                     href="#"
-                                    class="block px-4 py-2 hover:bg-gray-100"
+                                    class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
                                     >Apple Watch Strap</a
                                   >
                                 </li>
                                 <li>
                                   <a
                                     href="#"
-                                    class="block px-4 py-2 hover:bg-gray-100"
+                                    class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
                                     >Apple Watch Case</a
                                   >
                                 </li>
@@ -297,21 +298,21 @@
                           <li>
                             <a
                               href="#"
-                              class="block px-4 py-2 hover:bg-gray-100"
+                              class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
                               >Phone Holder</a
                             >
                           </li>
                           <li>
                             <a
                               href="#"
-                              class="block px-4 py-2 hover:bg-gray-100"
+                              class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
                               >Handstrap</a
                             >
                           </li>
                           <li>
                             <a
                               href="#"
-                              class="block px-4 py-2 hover:bg-gray-100"
+                              class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
                               >Lanyard</a
                             >
                           </li>
@@ -327,7 +328,7 @@
                         data-dropdown-trigger="hover"
                         data-dropdown-placement="right-start"
                         type="button"
-                        class="flex items-center justify-between w-full px-4 py-2 hover:bg-gray-100"
+                        class="flex items-center justify-between w-full px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
                       >
                         Airpods Case<svg
                           class="w-2.5 h-2.5 ms-3 rtl:rotate-180"
@@ -347,16 +348,16 @@
                       </button>
                       <div
                         id="doubleDropdown3"
-                        class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44"
+                        class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700"
                       >
                         <ul
-                          class="py-2 text-sm text-gray-700"
+                          class="py-2 text-sm text-gray-700 dark:text-gray-200"
                           aria-labelledby="doubleDropdownButton"
                         >
                           <li>
                             <a
                               href="#"
-                              class="block px-4 py-2 hover:bg-gray-100"
+                              class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
                               >Airpods Pro 2</a
                             >
                           </li>
@@ -364,7 +365,7 @@
                           <li>
                             <a
                               href="#"
-                              class="block px-4 py-2 hover:bg-gray-100"
+                              class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
                               >Airpods Pro</a
                             >
                           </li>
@@ -372,7 +373,7 @@
                           <li>
                             <a
                               href="#"
-                              class="block px-4 py-2 hover:bg-gray-100"
+                              class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
                               >Airpods 3</a
                             >
                           </li>
@@ -380,7 +381,7 @@
                           <li>
                             <a
                               href="#"
-                              class="block px-4 py-2 hover:bg-gray-100"
+                              class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
                               >Airpods 1 / Airpods 2</a
                             >
                           </li>
@@ -396,7 +397,7 @@
                         data-dropdown-trigger="hover"
                         data-dropdown-placement="right-start"
                         type="button"
-                        class="flex items-center justify-between w-full px-4 py-2 hover:bg-gray-100"
+                        class="flex items-center justify-between w-full px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
                       >
                         Ipad Case<svg
                           class="w-2.5 h-2.5 ms-3 rtl:rotate-180"
@@ -416,16 +417,16 @@
                       </button>
                       <div
                         id="doubleDropdown4"
-                        class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44"
+                        class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700"
                       >
                         <ul
-                          class="py-2 text-sm text-gray-700"
+                          class="py-2 text-sm text-gray-700 dark:text-gray-200"
                           aria-labelledby="doubleDropdownButton"
                         >
                           <li>
                             <a
                               href="#"
-                              class="block px-4 py-2 hover:bg-gray-100"
+                              class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
                               >IPad Air 5</a
                             >
                           </li>
@@ -433,7 +434,7 @@
                           <li>
                             <a
                               href="#"
-                              class="block px-4 py-2 hover:bg-gray-100"
+                              class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
                               >IPad 2021 9th Gen 10.2" Inch</a
                             >
                           </li>
@@ -441,7 +442,7 @@
                           <li>
                             <a
                               href="#"
-                              class="block px-4 py-2 hover:bg-gray-100"
+                              class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
                               >IPad Mini 2021 6th Gen 8.3" Inch</a
                             >
                           </li>
@@ -451,7 +452,9 @@
 
                     <!-- Product Menu Item 05 Backpack -->
                     <li>
-                      <a href="#" class="block px-4 py-2 hover:bg-gray-100"
+                      <a
+                        href="#"
+                        class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
                         >Backpack</a
                       >
                     </li>
@@ -464,7 +467,7 @@
                         data-dropdown-trigger="hover"
                         data-dropdown-placement="right-start"
                         type="button"
-                        class="flex items-center justify-between w-full px-4 py-2 hover:bg-gray-100"
+                        class="flex items-center justify-between w-full px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
                       >
                         Laptop Case<svg
                           class="w-2.5 h-2.5 ms-3 rtl:rotate-180"
@@ -484,16 +487,16 @@
                       </button>
                       <div
                         id="doubleDropdown5"
-                        class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44"
+                        class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700"
                       >
                         <ul
-                          class="py-2 text-sm text-gray-700"
+                          class="py-2 text-sm text-gray-700 dark:text-gray-200"
                           aria-labelledby="doubleDropdownButton"
                         >
                           <li>
                             <a
                               href="#"
-                              class="block px-4 py-2 hover:bg-gray-100"
+                              class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
                               >Macbook Pro Case 13"</a
                             >
                           </li>
@@ -501,7 +504,7 @@
                           <li>
                             <a
                               href="#"
-                              class="block px-4 py-2 hover:bg-gray-100"
+                              class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
                               >Macbook Air Case 13"</a
                             >
                           </li>
@@ -511,7 +514,9 @@
 
                     <!-- Product Menu Item 07 Laptop Sleeve -->
                     <li>
-                      <a href="#" class="block px-4 py-2 hover:bg-gray-100"
+                      <a
+                        href="#"
+                        class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
                         >Laptop Sleeve</a
                       >
                     </li>
@@ -524,7 +529,7 @@
                         data-dropdown-trigger="hover"
                         data-dropdown-placement="right-start"
                         type="button"
-                        class="flex items-center justify-between w-full px-4 py-2 hover:bg-gray-100"
+                        class="flex items-center justify-between w-full px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
                       >
                         Power Needs<svg
                           class="w-2.5 h-2.5 ms-3 rtl:rotate-180"
@@ -544,23 +549,23 @@
                       </button>
                       <div
                         id="doubleDropdown6"
-                        class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44"
+                        class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700"
                       >
                         <ul
-                          class="py-2 text-sm text-gray-700"
+                          class="py-2 text-sm text-gray-700 dark:text-gray-200"
                           aria-labelledby="doubleDropdownButton"
                         >
                           <li>
                             <a
                               href="#"
-                              class="block px-4 py-2 hover:bg-gray-100"
+                              class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
                               >Powerbank</a
                             >
                           </li>
                           <li>
                             <a
                               href="#"
-                              class="block px-4 py-2 hover:bg-gray-100"
+                              class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
                               >Data Sync & Charge Cable</a
                             >
                           </li>
@@ -570,28 +575,36 @@
 
                     <!-- Product Menu Item 09 T-Shirt -->
                     <li>
-                      <a href="#" class="block px-4 py-2 hover:bg-gray-100"
+                      <a
+                        href="#"
+                        class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
                         >T-Shirt</a
                       >
                     </li>
 
                     <!-- Product Menu Item 10 Cross Slinger -->
                     <li>
-                      <a href="#" class="block px-4 py-2 hover:bg-gray-100"
+                      <a
+                        href="#"
+                        class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
                         >Cross Slinger</a
                       >
                     </li>
 
                     <!-- Product Menu Item 11 Travel Wallet -->
                     <li>
-                      <a href="#" class="block px-4 py-2 hover:bg-gray-100"
+                      <a
+                        href="#"
+                        class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
                         >Travel Wallet</a
                       >
                     </li>
 
                     <!-- Product Menu Item 12 Masker -->
                     <li>
-                      <a href="#" class="block px-4 py-2 hover:bg-gray-100"
+                      <a
+                        href="#"
+                        class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
                         >Masker</a
                       >
                     </li>
@@ -601,17 +614,23 @@
               <!-- End of Product Button -->
 
               <li>
-                <a href="#aboutUs" class="mx-3 capitalize hover:border-b-2"
+                <a
+                  href="#aboutUs"
+                  class="mx-3 capitalize hover:border-b-2 border-black"
                   >about us</a
                 >
               </li>
               <li>
-                <a href="#blog" class="mx-3 capitalize hover:border-b-2"
+                <a
+                  href="#blog"
+                  class="mx-3 capitalize hover:border-b-2 border-black"
                   >blog</a
                 >
               </li>
               <li>
-                <a href="#contact" class="mx-3 capitalize hover:border-b-2"
+                <a
+                  href="#contact"
+                  class="mx-3 capitalize hover:border-b-2 border-black"
                   >contact</a
                 >
               </li>
@@ -641,545 +660,90 @@
               </a>
             </li>
             <li class="w-5 m-1 mx-2">
-              <a href="login.html">
+              <a href="register_login.html">
                 <i class="far fa-user"></i>
               </a>
             </li>
           </ul>
         </div>
       </nav>
-
-      <!-- Header Subject -->
-
-      <!-- Brand Name  -->
-      <div class="flex justify-center mx-11">
-        <h1
-          class="text-white text-[19vw] uppercase italic font-bold mt-16 opacity-75"
-        >
-          skinarma
-        </h1>
-      </div>
-
-      <!-- Company Describing -->
-      <div
-        class="text-right text-[1.35vw] w-5/12 ml-auto items-end mr-11 flex flex-col align-bottom"
-      >
-        <p class="text-white my-4">
-          Inspired by japanese culture and the vibrant harajuku spirit of tokyo
-          youth, Skinarma is a contemporary brand designed for the bold at
-          heart. Carry the pinnacle os asian couture with you today through
-          Skinarma inspired designs, permium farbric, and detailed construction.
-        </p>
-        <button
-          type="button"
-          class="text-white uppercase my-4 border px-6 py-2 mb-16 backdrop-blur-sm rounded-full"
-        >
-          explore now
-        </button>
-      </div>
     </header>
-    <!-- End of Navbar & Header Section -->
 
-    <!-- Start of Main Section -->
-    <main>
-      <!-- Company Slogan -->
-      <div
-        class="bg-main-bg bg-cover bg-opacity-40 md:flex flex-col justify-center items-center h-auto uppercase"
-      >
-        <h2
-          class="md:text-[4.5vw] text-center mt-14 mb-8 font-medium w-3/4 leading-loose"
-        >
-          express
-          <img
-            class="w-[8vw] rounded-md inline"
-            src="../assets/images/03-main/image01.jpg"
-            alt="skinarma"
-          />
-          yourself with color trendy lifestyle,
-          <img
-            class="w-[8vw] rounded-md inline"
-            src="../assets/images/03-main/image03.jpg"
-            alt="skinarma"
-          />
-          inspired by art
-          <img
-            class="w-[8vw] rounded-md inline"
-            src="../assets/images/03-main/image02.jpg"
-            alt="skinarma"
-          />
-          and tech.
-        </h2>
-        <p
-          class="md:text-[1.2vw] text-center text-gray-500 w-3/4 mt-6 mb-14 font-medium"
-        >
-          more than just anaccessory, it's a lifestyle
-        </p>
+    <!-- main section -->
+    <main class="h-screen flex divide-x-2 divide-gray-200">
+      <div class="basis-1/2 flex flex-col justify-center items-center">
+        <h2 class="text-6xl font-bold w-72">Create an account</h2>
       </div>
+      <div class="basis-1/2 flex flex-col justify-center items-center">
 
-      <!-- Trusting -->
-      <div
-        class="md:flex divide-x-2 divide-gray-500 items-center md:m-4 lg:m-16"
-      >
-        <h2
-          class="basis-1/2 text-[4.5vw] px-6 uppercase font-medium leading-tight"
-        >
-          new kids on the block
-        </h2>
-        <p class="text-gray-500 basis-1/2 px-6 text-[1.7vw]">
-          Over the years, we have built trust with our customers by providing
-          consistently innovative, high-quality and long-lasting products.
-        </p>
-      </div>
-
-      <!-- Products -->
-      <div class="mb-20">
-        <div
-          class="grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-11 justify-items-center items-center m-20"
-        >
-          <!-- Item 01 -->
-          <div class="lg:w-[25vw] flex flex-col">
-            <!-- Item 01 Image Box -->
-            <div class="imageBox">
-              <!-- Default Image Box -->
-              <div class="imageInn">
-                <img
-                  src="../assets/images/04-products/titon.webp"
-                  alt="titon"
-                  class="border-2 rounded-xl my-2"
-                />
-              </div>
-
-              <!-- Hover Image Box -->
-              <div class="hoverImg">
-                <img
-                  src="../assets/images/04-products/titon-hover.webp"
-                  alt="titon"
-                  class="border-2 rounded-xl my-2"
-                />
-              </div>
-            </div>
-            <div class="grid grid-cols-[4fr,1fr] gap-2">
-              <!-- Item 01 Product Name -->
-              <h4 class="text-left font-bold text-2xl">TITON</h4>
-
-              <!-- Item 01 Price -->
-              <h4 class="text-right font-bold text-2xl">$49.90</h4>
-
-              <!-- Item 01 Detail -->
-              <p class="text-left h-12 text-gray-500">
-                Apple Watch Strap 49|45|44 mm
-              </p>
-
-              <!-- Item 01 Color -->
-              <div class="text-right">
-                <button class="w-4 h-4 bg-black border-2"></button>
-              </div>
-            </div>
+        <!-- REGISTER FORM -->
+        <form action="#" method="get" id="login" class="">
+          
+          <!-- FIRST NAME SECTION -->
+          <div class="w-[35vw] h-[4vw] my-8">
+            <input
+              class="w-full h-full rounded-sm border-gray-400 placeholder-black shadow-black focus:border-black focus:ring-black"
+              required
+              type="text"
+              placeholder="First Name"
+            />
           </div>
 
-          <!-- Item 02 -->
-          <div class="lg:w-[25vw] flex flex-col">
-            <!-- Item 02 Image Box -->
-            <div class="imageBox">
-              <!-- Default Image Box -->
-              <div class="imageInn">
-                <img
-                  src="../assets/images/04-products/helio_iphone_15_pro.webp"
-                  alt="helio_iphone_15_pro"
-                  class="border-2 rounded-xl my-2"
-                />
-              </div>
-
-              <!-- Hover Image Box -->
-              <div class="hoverImg">
-                <img
-                  src="../assets/images/04-products/helio_iphone_15_pro-hover.webp"
-                  alt="helio_iphone_15_pro"
-                  class="border-2 rounded-xl my-2"
-                />
-              </div>
-            </div>
-            <div class="grid grid-cols-[4fr,1fr] gap-2">
-              <!-- Item 02 Product Name -->
-              <h4 class="text-left font-bold text-2xl">HELIO</h4>
-
-              <!-- Item 02 Price -->
-              <h4 class="text-right font-bold text-2xl">$42.90</h4>
-
-              <!-- Item 02 Detail -->
-              <p class="text-left h-12 text-gray-500">
-                Mag-Charge iPhone 15 Pro with Grid-Stand
-              </p>
-
-              <!-- Item 02 Color -->
-              <div class="text-right">
-                <button class="w-4 h-4 bg-orange-500 border-2"></button>
-                <button class="w-4 h-4 bg-gray-500 border-2"></button>
-              </div>
-            </div>
+          <!-- LAST NAME SECTION -->
+          <div class="w-[35vw] h-[4vw] my-8">
+            <input
+              class="w-full h-full rounded-sm border-gray-400 placeholder-black shadow-black focus:border-black focus:ring-black"
+              required
+              type="text"
+              placeholder="Last Name"
+            />
           </div>
 
-          <!-- Item 03 -->
-          <div class="lg:w-[25vw] flex flex-col">
-            <!-- Item 03 Image Box -->
-            <div class="imageBox">
-              <!-- Default Image Box -->
-              <div class="imageInn">
-                <img
-                  src="../assets/images/04-products/helio_iphone_15_pro_max.webp"
-                  alt="helio_iphone_15_pro_max"
-                  class="border-2 rounded-xl my-2"
-                />
-              </div>
-
-              <!-- Hover Image Box -->
-              <div class="hoverImg">
-                <img
-                  src="../assets/images/04-products/helio_iphone_15_pro_max-hover.webp"
-                  alt="helio_iphone_15_pro_max"
-                  class="border-2 rounded-xl my-2"
-                />
-              </div>
-            </div>
-            <div class="grid grid-cols-[4fr,1fr] gap-2">
-              <!-- Item 03 Product Name -->
-              <h4 class="text-left font-bold text-2xl">HELIO</h4>
-
-              <!-- Item 03 Price -->
-              <h4 class="text-right font-bold text-2xl">$42.90</h4>
-
-              <!-- Item 03 Detail -->
-              <p class="text-left h-12 text-gray-500">
-                Mag-Charge iPhone 15 Pro Max with Grid-Stand
-              </p>
-
-              <!-- Item 03 Color -->
-              <div class="text-right">
-                <button class="w-4 h-4 bg-black border-2"></button>
-                <button class="w-4 h-4 bg-orange-500 border-2"></button>
-              </div>
-            </div>
+          <!-- EMAIL SECTION -->
+          <div class="w-[35vw] h-[4vw] my-8">
+            <input
+              class="w-full h-full rounded-sm border-gray-400 placeholder-black shadow-black focus:border-black focus:ring-black"
+              required
+              type="text"
+              placeholder="Email"
+            />
           </div>
 
-          <!-- Item 04 -->
-          <div class="lg:w-[25vw] flex flex-col">
-            <!-- Item 04 Image Box -->
-            <div class="imageBox">
-              <!-- Default Image Box -->
-              <div class="imageInn">
-                <img
-                  src="../assets/images/04-products/COMET.webp"
-                  alt="COMET"
-                  class="border-2 rounded-xl my-2"
-                />
-              </div>
-
-              <!-- Hover Image Box -->
-              <div class="hoverImg">
-                <img
-                  src="../assets/images/04-products/COMET-hover.webp"
-                  alt="COMET"
-                  class="border-2 rounded-xl my-2"
-                />
-              </div>
-            </div>
-            <div class="grid grid-cols-[4fr,1fr] gap-2">
-              <!-- Item 04 Product Name -->
-              <h4 class="text-left font-bold text-2xl">COMET</h4>
-
-              <!-- Item 04 Price -->
-              <h4 class="text-right font-bold text-2xl">$34.90</h4>
-
-              <!-- Item 04 Detail -->
-              <p class="text-left h-12 text-gray-500">
-                Card Holder with Utility Pocket
-              </p>
-
-              <!-- Item 04 Color -->
-              <div class="text-right">
-                <button class="w-4 h-4 bg-gray-500 border-2"></button>
-                <button class="w-4 h-4 bg-blue-500 border-2"></button>
-              </div>
-            </div>
+          <!-- PASSWORD SECTION -->
+          <div class="w-[35vw] h-[4vw] my-8">
+            <input
+              class="w-full h-full rounded-sm border-gray-400 placeholder-black shadow-black focus:border-black focus:ring-black"
+              required
+              type="password"
+              placeholder="Password"
+            />
           </div>
 
-          <!-- Item 05 -->
-          <div class="lg:w-[25vw] flex flex-col">
-            <!-- Item 05 Image Box -->
-            <div class="imageBox">
-              <!-- Default Image Box -->
-              <div class="imageInn">
-                <img
-                  src="../assets/images/04-products/fardel_crossbody.webp"
-                  alt="fardel_crossbody"
-                  class="border-2 rounded-xl my-2"
-                />
-              </div>
-
-              <!-- Hover Image Box -->
-              <div class="hoverImg">
-                <img
-                  src="../assets/images/04-products/fardel_crossbody-hover.webp"
-                  alt="fardel_crossbody"
-                  class="border-2 rounded-xl my-2"
-                />
-              </div>
-            </div>
-            <div class="grid grid-cols-[4fr,1fr] gap-2">
-              <!-- Item 05 Product Name -->
-              <h4 class="text-left font-bold text-2xl">FARADEL</h4>
-
-              <!-- Item 05 Price -->
-              <h4 class="text-right font-bold text-2xl">$44.90</h4>
-
-              <!-- Item 05 Detail -->
-              <p class="text-left h-12 text-gray-500">Crossbody Bag</p>
-
-              <!-- Item 05 Color -->
-              <div class="text-right">
-                <button class="w-4 h-4 bg-black border-2"></button>
-                <button class="w-4 h-4 bg-gray-500 border-2"></button>
-                <button class="w-4 h-4 bg-yellow-100 border-2"></button>
-              </div>
-            </div>
-          </div>
-
-          <!-- Item 06 -->
-          <div class="lg:w-[25vw] flex flex-col">
-            <!-- Item 06 Image Box -->
-            <div class="imageBox">
-              <!-- Default Image Box -->
-              <div class="imageInn">
-                <img
-                  src="../assets/images/04-products/COMET_Clutch.webp"
-                  alt="COMET_Clutch"
-                  class="border-2 rounded-xl my-2"
-                />
-              </div>
-
-              <!-- Hover Image Box -->
-              <div class="hoverImg">
-                <img
-                  src="../assets/images/04-products/COMET_Clutch-hover.webp"
-                  alt="COMET_Clutch"
-                  class="border-2 rounded-xl my-2"
-                />
-              </div>
-            </div>
-            <div class="grid grid-cols-[4fr,1fr] gap-2">
-              <!-- Item 06 Product Name -->
-              <h4 class="text-left font-bold text-2xl">COMET</h4>
-
-              <!-- Item 06 Price -->
-              <h4 class="text-right font-bold text-2xl">$44.90</h4>
-
-              <!-- Item 06 Detail -->
-              <p class="text-left h-12 text-gray-500">Clutch Bag</p>
-
-              <!-- Item 06 Color -->
-              <div class="text-right">
-                <button class="w-4 h-4 bg-black border-2"></button>
-                <button class="w-4 h-4 bg-white border-2"></button>
-                <button class="w-4 h-4 bg-blue-500 border-2"></button>
-              </div>
-            </div>
-          </div>
-        </div>
-        <button
-          class="block m-auto px-8 py-4 border-2 border-black text-xl text-black font-bold rounded-full hover:text-white hover:bg-black"
-          type="button"
-        >
-          SEE MORE PRODUCT
-        </button>
-      </div>
-
-      <!-- Start of Category Product -->
-      <div
-        class="grid lg:grid-cols-3 md:grid-cols-2 justify-items-center gap-y-10"
-      >
-        <!-- Item 01 -->
-        <div class="flex flex-col">
-          <div class="catBox">
-            <div class="lg:w-[25vw] md:w-[35vw] w-[50vw]">
-              <img
-                src="../assets/images/05-category/01-laptop sleeve.jpg"
-                alt="LAPTOP SLEEVE"
-                class="w-full"
-              />
-            </div>
+          <!-- BUTTONS SECTION -->
+          <div class="w-[35vw] h-[4vw] my-8 flex items-center justify-between">
+            
+            <!-- CREATE BUTTON -->
             <button
-              class="hoverBtn text-white border-2 rounded-full px-[3vw] py-[1vw] xl:text-[1vw] lg:text-[.9vw] md:text-[1vw] text-[1vw] backdrop-blur-sm"
-              type="button"
+              type="submit"
+              class="rounded-full text-white bg-black border-2 border-black px-20 py-4"
             >
-              EXPLORE NOW
+              CREATE
             </button>
-          </div>
-          <p class="text-gray-500 mt-1">CARRY YOUR LAPTOP IN STYLE</p>
-          <h3 class="font-bold text-2xl">LAPTOP SLEEVE</h3>
-        </div>
 
-        <!-- Item 02 -->
-        <div class="flex flex-col">
-          <div class="catBox">
-            <div class="lg:w-[25vw] md:w-[35vw] w-[50vw]">
-              <img
-                src="../assets/images/05-category/02-phone case.jpg"
-                alt="IPHONE CASE"
-                class="w-full"
-              />
-            </div>
+            <!-- CANCEL BUTTON -->
             <button
-              class="hoverBtn text-white border-2 rounded-full px-[3vw] py-[1vw] xl:text-[1vw] lg:text-[.9vw] md:text-[1vw] text-[1vw] backdrop-blur-sm"
               type="button"
+              class="rounded-full text-black bg-white border-2 border-black px-20 py-4"
             >
-              EXPLORE NOW
+              <a href="index.html">CANSEL</a>
             </button>
-          </div>
-          <p class="text-gray-500 mt-1">PROTECT YOUR IPHONE</p>
-          <h3 class="font-bold text-2xl">IPHONE CASE</h3>
-        </div>
 
-        <!-- Item 03 -->
-        <div class="flex flex-col">
-          <div class="catBox">
-            <div class="lg:w-[25vw] md:w-[35vw] w-[50vw]">
-              <img
-                src="../assets/images/05-category/03-Ipad case.jpg"
-                alt="IPAD CASE"
-                class="w-full"
-              />
-            </div>
-            <button
-              class="hoverBtn text-white border-2 rounded-full px-[3vw] py-[1vw] xl:text-[1vw] lg:text-[.9vw] md:text-[1vw] text-[1vw] backdrop-blur-sm"
-              type="button"
-            >
-              EXPLORE NOW
-            </button>
           </div>
-          <p class="text-gray-500 mt-1">CARRY YOUR LAPTOP IN STYLE</p>
-          <h3 class="font-bold text-2xl">IPAD CASE</h3>
-        </div>
+        </form>
 
-        <!-- Item 04 -->
-        <div class="flex flex-col">
-          <div class="catBox">
-            <div class="lg:w-[25vw] md:w-[35vw] w-[50vw]">
-              <img
-                src="../assets/images/05-category/04-lanyard.jpg"
-                alt="LANDYARD"
-                class="w-full"
-              />
-            </div>
-            <button
-              class="hoverBtn text-white border-2 rounded-full px-[3vw] py-[1vw] xl:text-[1vw] lg:text-[.9vw] md:text-[1vw] text-[1vw] backdrop-blur-sm"
-              type="button"
-            >
-              EXPLORE NOW
-            </button>
-          </div>
-          <p class="text-gray-500 mt-1">DESIGN YOUR PHONE</p>
-          <h3 class="font-bold text-2xl">LANDYARD</h3>
-        </div>
-
-        <!-- Item 05 -->
-        <div class="flex flex-col">
-          <div class="catBox">
-            <div class="lg:w-[25vw] md:w-[35vw] w-[50vw]">
-              <img
-                src="../assets/images/05-category/05-power needs.jpg"
-                alt="POWER NEED"
-                class="w-full"
-              />
-            </div>
-            <button
-              class="hoverBtn text-white border-2 rounded-full px-[3vw] py-[1vw] xl:text-[1vw] lg:text-[.9vw] md:text-[1vw] text-[1vw] backdrop-blur-sm"
-              type="button"
-            >
-              EXPLORE NOW
-            </button>
-          </div>
-          <p class="text-gray-500 mt-1">Lorem ipsum dolor sit amet</p>
-          <h3 class="font-bold text-2xl">POWER NEED</h3>
-        </div>
-
-        <!-- Item 06 -->
-        <div class="flex flex-col">
-          <div class="catBox">
-            <div class="lg:w-[25vw] md:w-[35vw] w-[50vw]">
-              <img
-                src="../assets/images/05-category/06-smart watch.jpg"
-                alt="SMART WATCH"
-                class="w-full"
-              />
-            </div>
-            <button
-              class="hoverBtn text-white border-2 rounded-full px-[3vw] py-[1vw] xl:text-[1vw] lg:text-[.9vw] md:text-[1vw] text-[1vw] backdrop-blur-sm"
-              type="button"
-            >
-              EXPLORE NOW
-            </button>
-          </div>
-          <p class="text-gray-500 mt-1">CARRY YOUR LAPTOP IN STYLE</p>
-          <h3 class="font-bold text-2xl">SMART WATCH</h3>
-        </div>
-
-        <!-- Item 07 -->
-        <div class="flex flex-col">
-          <div class="catBox">
-            <div class="lg:w-[25vw] md:w-[35vw] w-[50vw]">
-              <img
-                src="../assets/images/05-category/07-backpack.jpg"
-                alt="BACKPACK"
-                class="w-full"
-              />
-            </div>
-            <button
-              class="hoverBtn text-white border-2 rounded-full px-[3vw] py-[1vw] xl:text-[1vw] lg:text-[.9vw] md:text-[1vw] text-[1vw] backdrop-blur-sm"
-              type="button"
-            >
-              EXPLORE NOW
-            </button>
-          </div>
-          <p class="text-gray-500 mt-1">CARRY YOUR LAPTOP IN STYLE</p>
-          <h3 class="font-bold text-2xl">BACKPACK</h3>
-        </div>
-      </div>
-      <!-- End of Category Product -->
-
-      <div class="my-12 mx-auto w-2/3 flex flex-col items-center">
-        <h5 class="text-5xl font-bold text-center w-3/5 m-5">
-          GET TO KNOW ABOUT OUR SOCIAL MEDIA
-        </h5>
-        <p class="text-gray-500 text-xl text-center w-11/12">
-          You can follow our social media pages on Instagram, Facebook, YouTube
-          and Twitter to get information about discounts, the latest collections
-          or other latest product offers.
-        </p>
-        <div class="my-5">
-          <a
-            href="#"
-            class="border-2 px-[2.5vw] py-[.7vw] mx-3 rounded-full hover:bg-black hover:text-white hover:border-black"
-            >INSTAGRAM</a
-          >
-          <a
-            href="#"
-            class="border-2 px-[2.5vw] py-[.7vw] mx-3 rounded-full hover:bg-black hover:text-white hover:border-black"
-            >YOUTUBE</a
-          >
-          <a
-            href="#"
-            class="border-2 px-[2.5vw] py-[.7vw] mx-3 rounded-full hover:bg-black hover:text-white hover:border-black"
-            >FACEBOOK</a
-          >
-          <a
-            href="#"
-            class="border-2 px-[2.5vw] py-[.7vw] mx-3 rounded-full hover:bg-black hover:text-white hover:border-black"
-            >TWITTER</a
-          >
-        </div>
+        
       </div>
     </main>
-    <!-- End of Main Section -->
 
     <!-- Start of Footer -->
     <footer class="bg-footer-bg bg-cover py-[8vw] px-[5vw] leading-tight">
