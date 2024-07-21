@@ -1,26 +1,42 @@
 function searchBox() {
   const searchIcon = document.getElementById("search-box");
   if (searchIcon.style.display == "block") {
-    searchIcon.style.display = "none"
+    searchIcon.style.display = "none";
   } else {
     searchIcon.style.display = "block";
   }
 }
+const login = document.getElementById("login");
+const reset = document.getElementById("reset");
 
-function resetPassword(){
-  const login = document.getElementById("login");
-  const reset = document.getElementById("reset");
-  login.style.display='none';
-  reset.style.display='block';
+function resetPassword() {
+  login.style.display = "none";
+  reset.style.display = "block";
+  console.log("login", login.style.display);
 }
 
-function login(){
-  const login = document.getElementById("login");
-  const reset = document.getElementById("reset");
-  reset.style.display='none';
-  login.style.display='block';
+function userLogin() {
+  reset.style.display = "none";
+  login.style.display = "block";
 }
 
+// HAMBURGER MENU
+const menuItems=document.getElementById('menu')
+function hamburgerMenu(){
+  if(menuItems.style.display=='block'){
+    console.log('1',menuItems.style.display);
+    menuItems.style.display='none';
+    console.log('2',menuItems.style.display);
+  }else {
+    menuItems.style.display='block';
+  }
+}
+
+// if(screen.width>=768){
+//   menuItems.style.display='block';
+// }else {
+//   menuItems.style.display='none';
+// }
 
 // Category product script
 // window.onload = function () {
@@ -47,3 +63,7 @@ function login(){
 //     drawerEl.click();
 //   }
 // };
+
+
+
+

@@ -1,0 +1,986 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SKINARMA-Login</title>
+    <!-- <link
+      rel="stylesheet"
+      href="https://flowbite.com/docs/flowbite.css?v=2.4.1a"
+    /> -->
+    <link rel="stylesheet" href="../assets/css/light-style.css" />
+    <link rel="stylesheet" href="../assets/css/output.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
+    />
+  </head>
+  <body class="font-body">
+    <header class="sticky top-0">
+      <!-- navbar section -->
+      <nav
+        class="grid grid-cols-[1fr,3fr,1fr] items-center justify-between text-black p-4 bg-white border-b-2 border-gray-200"
+      >
+        <!-- Logo section -->
+        <div class="logo sm:order-2 sm:text-center md:order-1">
+          <h1 class="uppercase text-[3vw]">skinarma</h1>
+        </div>
+
+        <!-- start navbar menu -->
+        <div class="menu sm:order-1 md:order-2">
+          <button
+            id="hamburgerMenu"
+            data-dropdown-toggle="hamburgerMenuItems"
+            class="sm:block md:hidden"
+            type="button"
+          >
+            <img
+              src="../assets/images/01-icons/menu-white.svg"
+              alt=""
+              class="w-5"
+            />
+          </button>
+          <div>
+            <ul class="hidden md:flex justify-center text-[1.5vw]">
+              <li>
+                <a
+                  href="index.html"
+                  class="mx-3 capitalize hover:border-b-2 border-black"
+                  >home</a
+                >
+              </li>
+
+              <!-- Start of Product Button   -->
+              <li>
+                <button
+                  id="multiLevelDropdownButton"
+                  data-dropdown-toggle="multi-dropdown"
+                  data-dropdown-trigger="hover"
+                  class="text-black mx-3 capitalize inline-flex items-center hover:border-b-2 border-black"
+                  type="button"
+                >
+                  products
+                  <svg
+                    class="w-2.5 h-2.5 ms-3"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 10 6"
+                  >
+                    <path
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="m1 1 4 4 4-4"
+                    />
+                  </svg>
+                </button>
+
+                <!-- Dropdown menu -->
+                <div
+                  id="multi-dropdown"
+                  class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700"
+                >
+                  <ul
+                    class="py-2 text-sm text-gray-700 dark:text-gray-200"
+                    aria-labelledby="multiLevelDropdownButton"
+                  >
+                    <!-- Product Menu Item 01 Phone Case dd -->
+                    <li>
+                      <button
+                        id="doubleDropdownButton1"
+                        data-dropdown-toggle="doubleDropdown1"
+                        data-dropdown-trigger="hover"
+                        data-dropdown-placement="right-start"
+                        type="button"
+                        class="flex items-center justify-between w-full px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                      >
+                        Phone Case<svg
+                          class="w-2.5 h-2.5 ms-3 rtl:rotate-180"
+                          aria-hidden="true"
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="none"
+                          viewBox="0 0 6 10"
+                        >
+                          <path
+                            stroke="currentColor"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            d="m1 9 4-4-4-4"
+                          />
+                        </svg>
+                      </button>
+                      <div
+                        id="doubleDropdown1"
+                        class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700"
+                      >
+                        <ul
+                          class="py-2 text-sm text-gray-700 dark:text-gray-200"
+                          aria-labelledby="doubleDropdownButton1"
+                        >
+                          <li>
+                            <a
+                              href="#"
+                              class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                              >Iphone 15 Series</a
+                            >
+                          </li>
+
+                          <li>
+                            <a
+                              href="#"
+                              class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                              >Iphone 14 Series</a
+                            >
+                          </li>
+
+                          <li>
+                            <a
+                              href="#"
+                              class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                              >Iphone 13 Series</a
+                            >
+                          </li>
+
+                          <li>
+                            <a
+                              href="#"
+                              class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                              >Iphone 12 Series</a
+                            >
+                          </li>
+
+                          <li>
+                            <a
+                              href="#"
+                              class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                              >Iphone 11 Series</a
+                            >
+                          </li>
+
+                          <li>
+                            <a
+                              href="#"
+                              class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                              >Iphone X Series</a
+                            >
+                          </li>
+
+                          <li>
+                            <a
+                              href="#"
+                              class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                              >Iphone 6+ / 7+ / 8+</a
+                            >
+                          </li>
+
+                          <li>
+                            <a
+                              href="#"
+                              class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                              >Samsung S24 Series</a
+                            >
+                          </li>
+
+                          <li>
+                            <a
+                              href="#"
+                              class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                              >Samsung Galaxy S21 Series</a
+                            >
+                          </li>
+
+                          <li>
+                            <a
+                              href="#"
+                              class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                              >Samsung Galaxy Note 20 Series</a
+                            >
+                          </li>
+
+                          <li>
+                            <a
+                              href="#"
+                              class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                              >Samsung Galaxy Note 10 Series</a
+                            >
+                          </li>
+                        </ul>
+                      </div>
+                    </li>
+
+                    <!-- Product Menu Item 02 Accessories dd -->
+                    <li>
+                      <button
+                        id="doubleDropdownButton2"
+                        data-dropdown-toggle="doubleDropdown2"
+                        data-dropdown-trigger="hover"
+                        data-dropdown-placement="right-start"
+                        type="button"
+                        class="flex items-center justify-between w-full px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                      >
+                        Accessories<svg
+                          class="w-2.5 h-2.5 ms-3 rtl:rotate-180"
+                          aria-hidden="true"
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="none"
+                          viewBox="0 0 6 10"
+                        >
+                          <path
+                            stroke="currentColor"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            d="m1 9 4-4-4-4"
+                          />
+                        </svg>
+                      </button>
+                      <div
+                        id="doubleDropdown2"
+                        class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700"
+                      >
+                        <ul
+                          class="py-2 text-sm text-gray-700 dark:text-gray-200"
+                          aria-labelledby="doubleDropdownButton"
+                        >
+                          <li>
+                            <button
+                              id="doubleDropdownButton2"
+                              data-dropdown-toggle="doubleDropdown21"
+                              data-dropdown-trigger="hover"
+                              data-dropdown-placement="right-start"
+                              type="button"
+                              class="flex items-center justify-between w-full px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white text-left"
+                            >
+                              Apple Watch Accessories<svg
+                                class="w-2.5 h-2.5 ms-3 rtl:rotate-180"
+                                aria-hidden="true"
+                                xmlns="http://www.w3.org/2000/svg"
+                                fill="none"
+                                viewBox="0 0 6 10"
+                              >
+                                <path
+                                  stroke="currentColor"
+                                  stroke-linecap="round"
+                                  stroke-linejoin="round"
+                                  stroke-width="2"
+                                  d="m1 9 4-4-4-4"
+                                />
+                              </svg>
+                            </button>
+                            <div
+                              id="doubleDropdown21"
+                              class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700"
+                            >
+                              <ul
+                                class="py-2 text-sm text-gray-700 dark:text-gray-200"
+                                aria-labelledby="doubleDropdownButton"
+                              >
+                                <li>
+                                  <a
+                                    href="#"
+                                    class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                                    >Apple Watch Strap</a
+                                  >
+                                </li>
+                                <li>
+                                  <a
+                                    href="#"
+                                    class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                                    >Apple Watch Case</a
+                                  >
+                                </li>
+                              </ul>
+                            </div>
+                          </li>
+                          <li>
+                            <a
+                              href="#"
+                              class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                              >Phone Holder</a
+                            >
+                          </li>
+                          <li>
+                            <a
+                              href="#"
+                              class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                              >Handstrap</a
+                            >
+                          </li>
+                          <li>
+                            <a
+                              href="#"
+                              class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                              >Lanyard</a
+                            >
+                          </li>
+                        </ul>
+                      </div>
+                    </li>
+
+                    <!-- Product Menu Item 03 Airpods Case dd -->
+                    <li>
+                      <button
+                        id="doubleDropdownButton"
+                        data-dropdown-toggle="doubleDropdown3"
+                        data-dropdown-trigger="hover"
+                        data-dropdown-placement="right-start"
+                        type="button"
+                        class="flex items-center justify-between w-full px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                      >
+                        Airpods Case<svg
+                          class="w-2.5 h-2.5 ms-3 rtl:rotate-180"
+                          aria-hidden="true"
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="none"
+                          viewBox="0 0 6 10"
+                        >
+                          <path
+                            stroke="currentColor"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            d="m1 9 4-4-4-4"
+                          />
+                        </svg>
+                      </button>
+                      <div
+                        id="doubleDropdown3"
+                        class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700"
+                      >
+                        <ul
+                          class="py-2 text-sm text-gray-700 dark:text-gray-200"
+                          aria-labelledby="doubleDropdownButton"
+                        >
+                          <li>
+                            <a
+                              href="#"
+                              class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                              >Airpods Pro 2</a
+                            >
+                          </li>
+
+                          <li>
+                            <a
+                              href="#"
+                              class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                              >Airpods Pro</a
+                            >
+                          </li>
+
+                          <li>
+                            <a
+                              href="#"
+                              class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                              >Airpods 3</a
+                            >
+                          </li>
+
+                          <li>
+                            <a
+                              href="#"
+                              class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                              >Airpods 1 / Airpods 2</a
+                            >
+                          </li>
+                        </ul>
+                      </div>
+                    </li>
+
+                    <!-- Product Menu Item 04 Ipad Case dd -->
+                    <li>
+                      <button
+                        id="doubleDropdownButton"
+                        data-dropdown-toggle="doubleDropdown4"
+                        data-dropdown-trigger="hover"
+                        data-dropdown-placement="right-start"
+                        type="button"
+                        class="flex items-center justify-between w-full px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                      >
+                        Ipad Case<svg
+                          class="w-2.5 h-2.5 ms-3 rtl:rotate-180"
+                          aria-hidden="true"
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="none"
+                          viewBox="0 0 6 10"
+                        >
+                          <path
+                            stroke="currentColor"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            d="m1 9 4-4-4-4"
+                          />
+                        </svg>
+                      </button>
+                      <div
+                        id="doubleDropdown4"
+                        class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700"
+                      >
+                        <ul
+                          class="py-2 text-sm text-gray-700 dark:text-gray-200"
+                          aria-labelledby="doubleDropdownButton"
+                        >
+                          <li>
+                            <a
+                              href="#"
+                              class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                              >IPad Air 5</a
+                            >
+                          </li>
+
+                          <li>
+                            <a
+                              href="#"
+                              class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                              >IPad 2021 9th Gen 10.2" Inch</a
+                            >
+                          </li>
+
+                          <li>
+                            <a
+                              href="#"
+                              class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                              >IPad Mini 2021 6th Gen 8.3" Inch</a
+                            >
+                          </li>
+                        </ul>
+                      </div>
+                    </li>
+
+                    <!-- Product Menu Item 05 Backpack -->
+                    <li>
+                      <a
+                        href="#"
+                        class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                        >Backpack</a
+                      >
+                    </li>
+
+                    <!-- Product Menu Item 06 Laptop Case dd -->
+                    <li>
+                      <button
+                        id="doubleDropdownButton"
+                        data-dropdown-toggle="doubleDropdown5"
+                        data-dropdown-trigger="hover"
+                        data-dropdown-placement="right-start"
+                        type="button"
+                        class="flex items-center justify-between w-full px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                      >
+                        Laptop Case<svg
+                          class="w-2.5 h-2.5 ms-3 rtl:rotate-180"
+                          aria-hidden="true"
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="none"
+                          viewBox="0 0 6 10"
+                        >
+                          <path
+                            stroke="currentColor"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            d="m1 9 4-4-4-4"
+                          />
+                        </svg>
+                      </button>
+                      <div
+                        id="doubleDropdown5"
+                        class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700"
+                      >
+                        <ul
+                          class="py-2 text-sm text-gray-700 dark:text-gray-200"
+                          aria-labelledby="doubleDropdownButton"
+                        >
+                          <li>
+                            <a
+                              href="#"
+                              class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                              >Macbook Pro Case 13"</a
+                            >
+                          </li>
+
+                          <li>
+                            <a
+                              href="#"
+                              class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                              >Macbook Air Case 13"</a
+                            >
+                          </li>
+                        </ul>
+                      </div>
+                    </li>
+
+                    <!-- Product Menu Item 07 Laptop Sleeve -->
+                    <li>
+                      <a
+                        href="#"
+                        class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                        >Laptop Sleeve</a
+                      >
+                    </li>
+
+                    <!-- Product Menu Item 08 Power Needs dd -->
+                    <li>
+                      <button
+                        id="doubleDropdownButton"
+                        data-dropdown-toggle="doubleDropdown6"
+                        data-dropdown-trigger="hover"
+                        data-dropdown-placement="right-start"
+                        type="button"
+                        class="flex items-center justify-between w-full px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                      >
+                        Power Needs<svg
+                          class="w-2.5 h-2.5 ms-3 rtl:rotate-180"
+                          aria-hidden="true"
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="none"
+                          viewBox="0 0 6 10"
+                        >
+                          <path
+                            stroke="currentColor"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            d="m1 9 4-4-4-4"
+                          />
+                        </svg>
+                      </button>
+                      <div
+                        id="doubleDropdown6"
+                        class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700"
+                      >
+                        <ul
+                          class="py-2 text-sm text-gray-700 dark:text-gray-200"
+                          aria-labelledby="doubleDropdownButton"
+                        >
+                          <li>
+                            <a
+                              href="#"
+                              class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                              >Powerbank</a
+                            >
+                          </li>
+                          <li>
+                            <a
+                              href="#"
+                              class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                              >Data Sync & Charge Cable</a
+                            >
+                          </li>
+                        </ul>
+                      </div>
+                    </li>
+
+                    <!-- Product Menu Item 09 T-Shirt -->
+                    <li>
+                      <a
+                        href="#"
+                        class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                        >T-Shirt</a
+                      >
+                    </li>
+
+                    <!-- Product Menu Item 10 Cross Slinger -->
+                    <li>
+                      <a
+                        href="#"
+                        class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                        >Cross Slinger</a
+                      >
+                    </li>
+
+                    <!-- Product Menu Item 11 Travel Wallet -->
+                    <li>
+                      <a
+                        href="#"
+                        class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                        >Travel Wallet</a
+                      >
+                    </li>
+
+                    <!-- Product Menu Item 12 Masker -->
+                    <li>
+                      <a
+                        href="#"
+                        class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                        >Masker</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <!-- End of Product Button -->
+
+              <li>
+                <a
+                  href="#aboutUs"
+                  class="mx-3 capitalize hover:border-b-2 border-black"
+                  >about us</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#blog"
+                  class="mx-3 capitalize hover:border-b-2 border-black"
+                  >blog</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#contact"
+                  class="mx-3 capitalize hover:border-b-2 border-black"
+                  >contact</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Start of Auth -->
+        <div class="sm:order-3">
+          <ul class="flex justify-end items-center">
+            <li>
+              <input
+                id="search-box"
+                type="search"
+                class="hidden w-32 h-8 text-black rounded-full"
+                placeholder="Search..."
+              />
+            </li>
+            <li class="w-5 m-1 mx-2">
+              <a href="">
+                <i class="fas fa-search" onclick="searchBox()"></i>
+              </a>
+            </li>
+            <li class="w-5 m-1 mx-2">
+              <a href="#">
+                <i class="fas fa-shopping-cart"></i>
+              </a>
+            </li>
+            <li class="w-5 m-1 mx-2">
+              <a href="login.html">
+                <i class="far fa-user"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <!-- main section -->
+    <main>
+      <section
+        class="bg-footer-bg-mob md:bg-none bg-cover flex flex-col md:flex-row items-center justify-between gap-16 md:gap-0 md:h-[600px] overflow-hidden"
+      >
+        <!-- JOIN SKRM COMMUNITY SECTION (MAIN) -->
+        <div
+          class="order-2 md:order-1 bg-cover w-2/3 md:w-full h-96 md:h-full md:basis-1/2 md:flex md:items-center md:justify-center"
+        >
+          <div class="md:hidden text-white flex flex-col md:w-10/12 gap-4">
+            <h4 class="text-3xl md:text-4xl font-bold mt-8 md:mt-0">
+              JOIN THE SKRM COMMUNITY
+            </h4>
+            <p class="text-sm">
+              Get exclusive offers, discount codes, special launches and more.
+              Sign up now for 10% off your next purchase.
+            </p>
+            <form
+              method="get"
+              class="flex flex-col justify-stretch gap-4 w-full"
+            >
+              <div>
+                <input
+                  class="w-full h-10 rounded-full px-3 py-1.5 bg-inherit border-[1px] placeholder-gray-200 text-white focus:ring-black focus:border-black"
+                  type="email"
+                  name="joinEmailAddress"
+                  id=""
+                  placeholder="Enter your email"
+                />
+              </div>
+              <div>
+                <button
+                  class="w-full text-black bg-white h-10 hover:bg-gray-100 rounded-full font-bold"
+                  type="submit"
+                >
+                  JOIN NOW
+                </button>
+              </div>
+            </form>
+          </div>
+          <div class="hidden md:block">
+            <img src="../assets/images/06-footer/bg2-mobile.jpg" alt="" />
+          </div>
+        </div>
+
+        <!-- LOGIN SECTION -->
+        <div
+          class="order-1 flex text-center justify-items-center w-2/3 h-96 md:justify-center md:items-center md:order-2 md:h-full md:basis-1/2"
+        >
+          <div class="sm:w-10/12 md:w-9/12 flex flex-col w-full justify-center">
+            <h3
+              class="text-white md:text-black basis-1/5 text-3xl md:text-4xl font-bold py-5"
+            >
+              Customer Login
+            </h3>
+
+            <!-- LOGIN FORM -->
+            <div id="login">
+              <form
+                action="#"
+                method="get"
+                class="basis-3/5 w-full flex flex-col gap-5"
+              >
+                <!-- EMAIL SECTION -->
+                <div class="">
+                  <input
+                    class="w-full h-10 rounded-md px-3 py-1.5 bg-inherit border-[1px] placeholder-white md:placeholder-black text-white md:text-black focus:ring-black focus:border-black"
+                    required
+                    autofocus
+                    name="emailAddress"
+                    type="text"
+                    placeholder="Email"
+                  />
+                </div>
+
+                <!-- PASSWORD SECTION -->
+                <div class="">
+                  <input
+                    class="w-full h-10 rounded-md px-3 py-1.5 bg-inherit border-[1px] placeholder-white md:placeholder-black text-white md:text-black focus:ring-black focus:border-black"
+                    required
+                    name="password"
+                    type="password"
+                    placeholder="Password"
+                  />
+                </div>
+
+                <!-- BUTTONS SECTION -->
+                <div class="flex flex-col gap-4">
+                  <button
+                    type="submit"
+                    class="w-full md:px-4 md:py-1.5 bg-white md:bg-black hover:bg-gray-100 md:hover:bg-gray-900 text-black md:text-white font-bold h-10 md:h-auto rounded-full"
+                  >
+                    LOGIN
+                  </button>
+                  <div class="text-white md:text-black">
+                    <p class="hover:underline" onclick="resetPassword()">
+                      Forgot your password?
+                    </p>
+                    <p class="inline text-gray-800 bg bg-white px-1 mr-1">
+                      New customer?
+                    </p>
+                    <a href="register.html" class="hover:underline">Sign up</a>
+                  </div>
+                </div>
+              </form>
+            </div>
+
+            <!-- RESET FORM -->
+            <div id="reset" class="hidden">
+              <form
+                action="#"
+                method="get"
+                class="basis-3/5 w-full flex flex-col gap-5"
+              >
+                <p
+                  class="text-white text-sm sm:text-lg md:text-black text-left"
+                >
+                  We will send you an email to reset your password.
+                </p>
+
+                <!-- EMAIL RESET SECTION -->
+                <div class="">
+                  <input
+                    class="w-full h-10 rounded-md px-3 py-1.5 bg-inherit border-[1px] placeholder-white md:placeholder-black text-white focus:ring-black focus:border-black"
+                    required
+                    name="resetEmailAddress"
+                    type="text"
+                    placeholder="Email"
+                  />
+                </div>
+
+                <!-- BUTTONS RESET SECTION -->
+                <div class="flex flex-col sm:flex-row gap-3">
+                  <button
+                    type="submit"
+                    class="w-full bg-black hover:bg-gray-100 md:hover:bg-gray-800 text-white font-bold h-10 rounded-full"
+                  >
+                    SUBMIT
+                  </button>
+                  <button
+                    type="button"
+                    class="w-full bg-white hover:bg-gray-100 text-black font-bold h-10 rounded-full md:border-[1px] border-black"
+                    onclick="userLogin()"
+                  >
+                    CANSEL
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Start of Footer -->
+    <footer class="bg-black text-white py-8 flex flex-col gap-5 z-0">
+      <!-- JOIN SKRM COMMUNITY SECTION (FOOTER) -->
+      <div class="hidden w-2/5 h-96 md:flex md:items-center md:justify-center">
+        <div class="text-white flex flex-col md:w-10/12 gap-4 w-full">
+          <h4 class="text-3xl md:text-4xl font-bold mt-8 md:mt-0 w-full">
+            JOIN THE SKRM COMMUNITY
+          </h4>
+          <p class="text-sm">
+            Get exclusive offers, discount codes, special launches and more.
+            Sign up now for 10% off your next purchase.
+          </p>
+          <form method="get" class="flex flex-col justify-stretch gap-4 w-full">
+            <div>
+              <input
+                class="w-full h-10 rounded-full px-3 py-1.5 bg-inherit border-[1px] placeholder-gray-200 text-white focus:ring-black focus:border-black"
+                type="email"
+                name="joinEmailAddress"
+                id=""
+                placeholder="Enter your email"
+              />
+            </div>
+            <div>
+              <button
+                class="px-4 text-black bg-white h-10 hover:bg-gray-100 rounded-full font-bold"
+                type="submit"
+              >
+                JOIN NOW
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <div
+        class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-footer justify-items-center gap-5"
+      >
+        <!-- Social Links -->
+        <div
+          class="flex flex-col col-span-2 sm:col-span-3 md:col-span-1 gap-5 w-2/3"
+        >
+          <h1 class="text-3xl text-center font-bold">SKINARMA</h1>
+          <p class="">
+            Join the SKRM community and find the latest and different products,
+            according to your needs.
+          </p>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="flex flex-col gap-3">
+          <h6 class="font-bold text-lg">Quick Links</h6>
+          <p class="font-thin">Home</p>
+          <p class="font-thin">Product</p>
+          <p class="font-thin">About Us</p>
+          <p class="font-thin">Blog</p>
+        </div>
+
+        <!-- Services -->
+        <div class="flex flex-col gap-3">
+          <h6 class="font-bold text-lg">Services</h6>
+          <p class="font-thin">Blog & Articels</p>
+          <p class="font-thin">Terms and Conditions</p>
+          <p class="font-thin">Privacy Policy</p>
+          <p class="font-thin">Contact Us</p>
+        </div>
+
+        <!-- Contact -->
+        <div class="col-span-2 sm:col-span-1 md:col-span-1 flex flex-col gap-3">
+          <h6 class="font-bold text-lg">Contact</h6>
+          <p class="font-thin">
+            <img
+              src="../assets/images/01-icons/location-white.svg"
+              alt=""
+              class="w-8 inline"
+            />002 Crown Street Jepang, SW18 55Z
+          </p>
+          <p class="font-thin">
+            <img
+              src="../assets/images/01-icons/phone-white.svg"
+              alt=""
+              class="w-8 inline"
+            />+98 (911) 571 2075
+          </p>
+          <p class="font-thin">
+            <img
+              src="../assets/images/01-icons/email-white.svg"
+              alt=""
+              class="w-8 inline"
+            />mahyar.kaliji@gmail.com
+          </p>
+        </div>
+
+        <!-- SOCIAL ICONS -->
+        <div class="col-span-2 sm:col-span-1 flex gap-3">
+          <div class="w-10 rounded-full p-2 bg-gray-700">
+            <a href="#">
+              <img
+                src="../assets/images/01-icons/instagram-svgrepo-com.svg"
+                alt="instagram"
+                class=""
+              />
+            </a>
+          </div>
+          <div class="w-10 rounded-full p-2 bg-gray-700">
+            <a href="#">
+              <img
+                src="../assets/images/01-icons/youtube-white.svg"
+                alt="youtube"
+                class=""
+              />
+            </a>
+          </div>
+          <div class="w-10 rounded-full p-2 bg-gray-700">
+            <a href="#">
+              <img
+                src="../assets/images/01-icons/tiktok-white.svg"
+                alt="tiktok"
+                class=""
+              />
+            </a>
+          </div>
+          <div class="w-10 rounded-full p-2 bg-gray-700">
+            <a href="#">
+              <img
+                src="../assets/images/01-icons/facebook-white.svg"
+                alt="facebook"
+                class=""
+              />
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- FOOTER IMAGE (MASK) -->
+      <div class="hidden sm:block my-[8vw] w-full">
+        <img
+          src="../assets/images/06-footer/skinarma.png"
+          alt=""
+          class="w-full hidden sm:block"
+        />
+      </div>
+
+      <!-- RIGHTS SECTION -->
+      <div
+        class="block md:flex text-center justify-between text-white backdrop-blur-md bg-slate-900 p-2"
+      >
+        <h6>&copy 2024 - SKINARMA. All rights reserved.</h6>
+        <div class="hidden md:flex">
+          <p class="mx-[1vw]">Privacy policy</p>
+          <p class="mx-[1vw]">Terms of use</p>
+          <p class="mx-[1vw]">Cookies</p>
+          <p class="mx-[1vw]">Legal information</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://flowbite.com/docs/flowbite.min.js"></script>
+    <script src="https://flowbite.com/docs/datepicker.min.js"></script>
+    <script src="../assets/js/main.js"></script>
+  </body>
+</html>
